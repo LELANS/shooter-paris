@@ -1,0 +1,19 @@
+.symbol-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7%;padding:110px 5% 100px;overflow:hidden;background:#101110;color:#ece8e1;isolation:isolate}
+.symbol-art{position:relative;display:grid;place-items:center;aspect-ratio:1;min-width:0}
+.symbol-orbit{position:absolute;border:1px solid #ece8e11c;border-radius:50%;pointer-events:none}
+.symbol-orbit-outer{inset:0}.symbol-orbit-middle{inset:9%}.symbol-orbit-inner{inset:18%}
+.symbol-spiral{width:64%;height:auto;object-fit:contain;transform:rotate(var(--spiral-angle,0deg));will-change:transform}
+.symbol-coordinate{position:absolute;bottom:-25px;font-size:8px;letter-spacing:2.4px;color:#948b79}
+.symbol-eyebrow{display:flex;gap:18px;color:#b9a98f;font-size:10px;letter-spacing:4px;margin-bottom:29px}
+.symbol-eyebrow span{color:#ddd8cf}
+.symbol-copy h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,5.2vw,92px);font-weight:400;letter-spacing:-2px;line-height:1.09;margin:0 0 36px}
+.symbol-copy h2 em{color:#b9a98f;font-weight:400;white-space:nowrap}
+.symbol-copy>p:not(.symbol-eyebrow){color:#bdbab3;font-size:14px;line-height:1.8;max-width:540px;margin:0 0 17px}
+.symbol-details{margin:35px 0 0;font-size:12px}
+.symbol-details>div{display:flex;justify-content:space-between;gap:20px;padding:19px 0;border-top:1px solid #ece8e12a}
+.symbol-details>div:last-child{border-bottom:1px solid #ece8e12a}
+.symbol-details dt{color:#ddd8cf}.symbol-details dd{margin:0;color:#b9a98f;text-align:right}
+@media(min-width:1700px){.symbol-section{padding-left:max(5%,calc((100vw - 1600px)/2));padding-right:max(5%,calc((100vw - 1600px)/2))}}
+@media(max-width:1000px) and (min-width:651px){.symbol-section{gap:5%;padding:90px 4%}.symbol-copy h2{font-size:4.8vw}.symbol-copy>p:not(.symbol-eyebrow){font-size:12px}}
+@media(max-width:650px){.symbol-section{grid-template-columns:1fr;padding:55px 7% 60px;gap:62px}.symbol-art{width:100%;max-width:390px;justify-self:center}.symbol-copy h2{font-size:clamp(35px,9.5vw,59px);letter-spacing:-1.5px;margin-bottom:27px}.symbol-eyebrow{font-size:8px;letter-spacing:3px;margin-bottom:23px}.symbol-copy>p:not(.symbol-eyebrow){font-size:13px}.symbol-details{margin-top:29px;font-size:11px}.symbol-details>div{padding:18px 0}.symbol-coordinate{font-size:7px;bottom:-22px}}
+@media(prefers-reduced-motion:reduce){.symbol-spiral{transform:none;will-change:auto}}
